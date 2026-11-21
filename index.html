@@ -131,13 +131,43 @@
       letter-spacing: 1px;
     }
 
-    /* Main Pricing Card */
-    .pricing-wrapper {
+    /* Middle Row: Discord Left + Pricing Right */
+    .middle-wrapper {
       display: flex;
-      justify-content: flex-end;
+      justify-content: space-between;
+      align-items: flex-start;
       margin-top: 28px;
     }
 
+    /* Discord Card */
+    .discord-card {
+      width: 580px;
+      padding: 34px;
+      animation: floatCard 5.5s ease-in-out infinite;
+    }
+
+    .discord-sub {
+      font-size: 22px;
+      font-weight: 600;
+      color: rgba(255, 255, 255, 0.8);
+      line-height: 1.45;
+      margin-bottom: 24px;
+    }
+
+    .discord-link-box {
+      padding: 22px;
+      text-align: center;
+      border-radius: 14px;
+      border: 2.5px solid #ffffff;
+      background: rgba(255, 255, 255, 0.1);
+      font-size: 30px;
+      font-weight: 900;
+      letter-spacing: 1.2px;
+      color: #ffffff;
+      animation: borderGlow 3s infinite alternate ease-in-out;
+    }
+
+    /* Main Pricing Card */
     .pricing-card {
       width: 640px;
       padding: 36px;
@@ -291,8 +321,25 @@
       </div>
     </div>
 
-    <!-- Pricing Card -->
-    <div class="pricing-wrapper">
+    <!-- Middle Section: Discord Card + Pricing Card -->
+    <div class="middle-wrapper">
+      <!-- Discord Card -->
+      <div class="card discord-card">
+        <div class="card-header">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+          </svg>
+          <span class="card-title">JOIN COMMUNITY DISCORD</span>
+        </div>
+        <div class="discord-sub">
+          Get instant support, live updates, and setup help in our server:
+        </div>
+        <div class="discord-link-box">
+          discord.gg/ve11
+        </div>
+      </div>
+
+      <!-- Pricing Card -->
       <div class="card pricing-card">
         <div class="card-header">
           <svg viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
